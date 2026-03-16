@@ -19,26 +19,28 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    height: 98vh;
+    min-height: 94vh;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .image{
-    height: 405px;
-    width: 405px;
+    max-width: 100%;
 }
 
 img{
     border-radius: 500px;
-    height: 405px;
+    height: auto;
     width: 405px;
+    max-width: 100%;
     transition: all 0.5s ease;
 }
 
 .text{
     margin-bottom: 10px;
     transition: all 0.5s ease;
+    padding: 0 10px;
 }
 
 .text h1{
@@ -46,14 +48,45 @@ img{
     margin-top: 10px;
     text-align: center;
     transition: all 0.5s ease;
+    font-size: 2rem;
+}
+
+@media (max-width: 480px) {
+    .image {
+        width: 300px;
+        height: auto;
+    }
+    
+    img {
+        width: 300px;
+        height: auto;
+    }
+
+    .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+.pika-mode {
+    border-radius: 0 !important;
+    margin-left: 38px;
+}
+
+@media (max-width: 480px) {
+    .pika-mode {
+        margin-left: 0;
+    }
 }
 
 .button{
     display: flex;
-    width: 250px;
+    width: 100%;
+    max-width: 300px;
     align-items: center;
     justify-content: space-evenly;
     transition: opacity 0.5s ease;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .heart {

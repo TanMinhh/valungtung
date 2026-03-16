@@ -6,12 +6,11 @@ const secondText = document.querySelector('.secondText');
 
 yesBtn.addEventListener('click', () => {
     image.src = 'img/pika_toge.png';
-    image.style.borderRadius = '0';
-    image.style.marginLeft = '38px';
+    image.classList.add('pika-mode');
+
     firstText.textContent = "Awwwwwww ♥";
     secondText.textContent = "Love You Sweetheart";
 
-    // Smoothly hide buttons
     const buttonContainer = document.querySelector('.button');
     buttonContainer.style.opacity = '0';
     buttonContainer.style.pointerEvents = 'none';
