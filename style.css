@@ -1,0 +1,112 @@
+.outfit-pixelify {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+}
+
+.pixelify-sans-unique {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    height: 405px;
+    width: 405px;
+}
+
+img{
+    border-radius: 500px;
+    height: 405px;
+    width: 405px;
+    transition: all 0.5s ease;
+}
+
+.text{
+    margin-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.text h1{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.button{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: opacity 0.5s ease;
+}
+
+.heart {
+    position: fixed;
+    bottom: -10vh;
+    font-size: 2rem;
+    color: #ff4d6d;
+    user-select: none;
+    pointer-events: none;
+    z-index: 1000;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+button{
+    width: 85px;
+    height: 46px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.yesBtn{
+    background-color: #A1F388;
+}
+
+.yesBtn:hover{
+    background-color: #39c011;
+    transition: linear 0.5s;
+    color: white;
+}
+
+.noBtn{
+    background-color: #ff8b8b;
+}
+
+.noBtn:hover{
+    background-color: #cf2d2d;
+    transition: linear 0.5s;
+    color: white;
+}
